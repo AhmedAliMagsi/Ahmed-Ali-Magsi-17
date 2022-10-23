@@ -1,0 +1,42 @@
+//Restaurant menu 
+import java.util.*;
+class Menue {
+	public static void main(String[] args) {
+		int Burger=200;
+		int Drink=90;
+		int fries=80;
+		int applepie=220;
+		int choise;
+		String order;
+		Scanner Sc =new Scanner(System.in);
+		System.out.println("menue");
+		System.out.println("1.Burger");
+		System.out.println("2.Drink");
+		System.out.println("3.fries");
+		System.out.print("4.applepie");
+		System.out.print("Enter choise(1_4):");
+		choise=Sc.nextInt();
+		//logic
+		switch(choise)
+		{
+			case 1:
+			order="Burger";
+			System.out.print(" value of Burger is 200");
+			break;
+			case 2:
+			order="Drink";
+			System.out.print("value of Drink is 90");
+			break;
+			case 3:
+			order="fries";
+			System.out.print("value of fries is 80");
+			break;
+			case 4:
+			order ="applepie";
+			System.out.print("value of applepei is 220");
+			break;
+			default :
+			order="not in menue ";
+		}
+	}
+}
